@@ -12,7 +12,8 @@ public class TestlinkedStack {
 		InputStreamReader in = new InputStreamReader(System.in);
 		 BufferedReader br = new BufferedReader(in);
 		
-		 ArrayImplementationStack astack = new ArrayImplementationStack();
+		 //ArrayImplementationStack stack = new ArrayImplementationStack();
+		 LinkedListStack<Integer> stack = new LinkedListStack<>();
 		 
 		 String line = null;
 		 try {
@@ -21,10 +22,7 @@ public class TestlinkedStack {
 			 String[] words = line.split(" ");
 	 
 				for (String s : words) {
-					if (s.equals("-"))
-					 astack.pop();
-					else 
-					astack.push(s);
+					stack.push(Integer.parseInt(s));
 				}	
 			 
 		} catch (IOException e) {
@@ -32,7 +30,7 @@ public class TestlinkedStack {
 			e.printStackTrace();
 		}
 		 
-		 astack.print();
+		 stack.print();
 		 
 	}
 	

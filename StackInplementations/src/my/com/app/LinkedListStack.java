@@ -1,18 +1,18 @@
 package my.com.app;
 
-public class LinkedListStack {
+public class LinkedListStack<T> {
 
-	private Node head;
+	private Node head; 
 	
-	private class Node{
+	private static class Node<T>{
 		
-		private String data;
+		private T data;
 		private Node next;
 		
 	}
 	
 	
-	public void push(String s) {
+	public void push(T s) {
 		
 		Node oldhead = head;
 		
@@ -23,13 +23,13 @@ public class LinkedListStack {
 //		oldhead.next = head;
 	}
 	
-	public String pop() {
+	public T pop() {
 		
 		Node deleted = head;
 		head = head.next;
 		deleted.next = null;
 		
-		return deleted.data ;
+		return (T) deleted.data ;
 	}
 	
 	public Boolean IsEmpty() {
@@ -45,5 +45,12 @@ public class LinkedListStack {
 		}
 			
 			
+	}
+	
+	public T peek() {
+		if(head!=null)
+			return (T) head.data;
+		
+		return null;
 	}
 }

@@ -15,17 +15,15 @@ public class LinkedListImplmtQueue {
 	
 		public void enqueue(String s) {
 			Node n = new Node();
-			n.data= s;
-			n.next = null;
-			if(first == null && last== null) {
-				first = n ; 
-				last=n;
+			n.data = s;
+			if(last!=null) {
+				last.next = n;
 			}
-			else {
-				last.next = n ;
-				last= n;
+			last = n;
+			if(first == null) {
+				first = last;
 			}
-			
+				
 		}
 		public String dequeue() {
 			
@@ -34,6 +32,10 @@ public class LinkedListImplmtQueue {
 			else {
 				Node deleted = first;
 				first=first.next;
+				
+				if(first==null) {
+					last = null;
+				}
 				return deleted.data;
 			}
 		}
