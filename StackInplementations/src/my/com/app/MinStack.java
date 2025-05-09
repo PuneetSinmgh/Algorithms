@@ -1,6 +1,12 @@
 package my.com.app;
 import java.util.*;
 
+/// Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
+// Implement the MinStack class:
+// 1. MinStack() initializes the stack object.  
+// 2. void push(int val) pushes the element val onto the stack.
+
+
 class StackNode {
     int val;
     int minval;
