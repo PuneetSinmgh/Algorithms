@@ -1,0 +1,14 @@
+Recurrence Relation: the relationship between the result of a problem and the result of its subproblems.
+// T(n) = T(n-1) + T(n-2) + O(1)
+Problem can be divided into smaller subproblems, and the solution to the original problem can be constructed from the solutions to the subproblems.
+// For example, in the Fibonacci sequence, F(n) = F(n-1) + F(n-2).
+The result returned by the recursive function is based on the results of the subproblems
+
+Base Case : Base case is the simplest instance of the problem, which can be solved directly without recursion.
+// For example, in the Fibonacci sequence, the base cases are F(0) = 0 and F(1) = 1.
+// In the Tower of Hanoi problem, the base case is when there is only one disk to move.
+// In the Merge Sort algorithm, the base case is when the array has one or zero elements, which is already sorted.
+// In the Binary Search algorithm, the base case is when the search space is empty or when the target element is found.
+
+It is important to define the base case correctly, as it prevents infinite recursion and ensures that the recursion terminates. 
+Conditionals are used to check for the base case and return the result directly without further recursive calls.
