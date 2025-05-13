@@ -3,8 +3,15 @@ package my.com.app;
 import java.util.*;
 
 
-// Design a class whihc finds Kth Largest Element in a Stream
-// 
+// Design a class which finds Kth Largest Element in a Stream
+// Implement the KthLargest class:
+// Use a min heap to keep track of the K largest elements
+// KthLargest(int k, int[] nums) Initializes the object with the integer k and the stream of integers nums.
+// The stream initially contains all elements of nums.
+// KthLargest.add(int val) appends the integer val to the stream and returns the element representing the kth largest element in the stream.
+// Note that it is the kth largest element in the sorted order, not the kth distinct element.
+// It can be assumed that there will always be at least k elements in the stream when calling each KthLargest.add method.
+
 class KthLargest {
 
     PriorityQueue<Integer> que ;
