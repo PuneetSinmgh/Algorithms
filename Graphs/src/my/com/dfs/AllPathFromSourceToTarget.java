@@ -1,4 +1,4 @@
-package my.com.app;
+package my.com.app.dfs;
 
 // iterate over all paths from source to target
 // 0 to n-1
