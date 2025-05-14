@@ -1,4 +1,4 @@
-package my.com.app;
+package my.com.app.dfs;
 
 public class Edge {
 

@@ -1,4 +1,4 @@
-package my.com.app;
+package my.com.app.dfs;
 
 // find if path exist in undirected graph
 // create graph using HashMap
