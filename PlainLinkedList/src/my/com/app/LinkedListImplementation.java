@@ -76,6 +76,108 @@ public class LinkedListImplementation implements LinkedList {
 		return 0;
 	}
 
+
+	 public int get(int index) {
+        
+        Node temp = head;
+        int i =0 ;
+
+        while( temp !=null ){
+            if(i == index){
+                break;
+            }
+            temp = temp.next;
+            i++;
+        }
+        return temp == null? -1 : temp.val;
+        
+    }
+    
+    public void addAtHead(int val) {
+        Node n = new Node(val);
+        if(head == null){
+            head = n;
+            tail = n;
+        } else {
+            n.next = head;
+            head = n;
+        }
+        
+    }
+    
+    public void addAtTail(int val) {
+         Node n = new Node(val);
+        if( tail == null){
+            head = n;
+            tail = n;
+        } else {
+            tail.next = n;
+            tail = n;
+        }
+       
+    }
+    
+    public void addAtIndex(int index, int val) {
+        
+        if  (index == 0) {
+            addAtHead(val);
+            return;
+        }
+
+        Node temp = head;
+        int i =0 ;
+
+        while( temp !=null ){
+            if(i == index-1){
+                break;
+            }
+            temp = temp.next;
+            i++;
+        }
+        
+        if ( temp !=null){
+            if ( tail == temp){
+                addAtTail(val);
+                return;
+            }
+            Node n = new Node(val);
+            n.next = temp.next;
+            temp.next = n;
+            
+        }
+        
+    }
+    
+    public void deleteAtIndex(int index) {
+        Node temp = head;
+        if (index == 0 ){
+            if (temp!=null){
+                head = temp.next;
+                temp.next = null;
+            }
+            return;
+        }
+        
+        int i = 0; 
+        while( temp!=null ){
+            if(i == index-1){
+                break;
+            }
+            temp = temp.next;
+            i++;
+        }
+        if(temp == null)
+            return;
+            
+        if (temp.next!=null){
+            if(tail == temp.next){
+                tail = temp;
+            }
+            Node t = temp.next;
+            temp.next = t.next;
+            t.next = null;
+        }
+    }
 	
 	
 }
