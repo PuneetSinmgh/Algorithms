@@ -178,6 +178,4 @@ public class LinkedListImplementation implements LinkedList {
             t.next = null;
         }
     }
-	
-	
 }
