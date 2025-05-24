@@ -1,4 +1,4 @@
-package my.com.app;
+package my.com.prefixsum;
 
 public class ArrayProductExceptSelf {
 
