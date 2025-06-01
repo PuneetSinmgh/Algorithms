@@ -85,4 +85,23 @@ public class MaximumSubarrayProblem {
 	        return maxleftSum + maxRightSum;
 	    }
 	}
+
+	class Solution3 {
+		
+		public int maxSubArray(int[] nums) {
+	        
+	       int maxsum = nums[0];
+        
+			for(int i=1 ;i <nums.length; i++){
+				
+				if(nums[i-1] > 0 )
+					nums[i] += nums[i-1];
+				
+				maxsum = Math.max(nums[i],maxsum);
+			}
+			return maxsum;
+	    }
+
+	}
+
 }
