@@ -46,3 +46,13 @@ public class ArrayProductExceptSelf {
 	
 	
 }
+
+
+// write code to Iterate over a hashset values and add them to a list using streams
+// import java.util.*;
+// import java.util.stream.Collectors;
+//
+// public class HashSetToList {
+//     public static void main(String[] args) {
+//         HashSet<String> hashSet = new HashSet<>(Arrays.asList("apple", "banana", "cherry"));		
+//         List<String> list = hashSet.stream().collect(Collectors.toList());											

@@ -1,4 +1,4 @@
-package my.com.app;
+package my.com.prefixsum;
 
 
 // continous sub Array sum divisible by k
