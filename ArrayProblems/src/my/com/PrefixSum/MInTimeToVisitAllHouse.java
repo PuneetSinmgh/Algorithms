@@ -1,6 +1,10 @@
+package src.my.com.prefixsum;
+
+import java.util.*;
+
 class Solution {
     public long minTotalTime(int[] forward, int[] backward, int[] queries) {
-        int[] forwardSum = new int[forward.length];
+        long[] forwardSum = new long[forward.length];
         int n = forward.length;
         forwardSum[0] = 0;
         for (int i=1 ;i<n; i++){
@@ -9,7 +13,7 @@ class Solution {
         
         int forwardLoopBack  = forward[n-1];
 
-        int[] backwardSum = new int[backward.length];
+        long[] backwardSum = new long[backward.length];
         backwardSum[n-1] = 0;
         for (int i=n-1 ;i>0 ; i--){
 
@@ -18,18 +22,31 @@ class Solution {
         }
         int backwardLoopBack = backward[0];
 
-        int res = 0;
+        long res = 0;
         int prev = 0; 
         for ( int i=0; i<queries.length; i++){
-            
+            long bsum = 0;
+            long fsum  = 0;
             int q = queries[i];
+
             if ( q > prev){ // min of forward path and backward path
-                int bsum  = backwardSum[0] - backwardSum[prev] + backwardLoopBack + backwardSum[q];
+                
+                if ( prev == 0 ) {
+                    bsum = backwardLoopBack +  backwardSum[q];
+                } else {
+                    bsum  = backwardSum[0] - backwardSum[prev] + backwardLoopBack + backwardSum[q];
+                }
+
                 res += Math.min( forwardSum[q] - forwardSum[prev] , bsum );
 
             } else {
-                int fsum = (forwardSum[n-1] - forwardSum[q]) +  forwardLoopBack + forwardSum[prev];
-                res +=  Math.min( fsum ,  backwardSum[prev] - backwardSum[q] );
+                
+                if ( prev == n-1){
+                    fsum = forwardLoopBack + forwardSum[q];
+                } else {
+                    fsum = (forwardSum[n-1] - forwardSum[prev]) +  forwardLoopBack + forwardSum[q];
+                }
+                res +=  Math.min( fsum ,   backwardSum[q] - backwardSum[prev] );
             }
             prev = q;
         }
