@@ -49,7 +49,7 @@ class Solution {
             }
         } */
 
-        /* optimized version
+        // optimized version
         HashMap<Integer, Integer> hs = new HashMap();
         int count =0 ;
 
@@ -67,37 +67,8 @@ class Solution {
             hs.put(sum,hs.getOrDefault(sum,0)+1);
         }
 
-        return count;*/
-
-        int sum = 0;
-        int count =0;
-        int i =0 , j=0;
-
-        while ( i<nums.length  ){
-            
-            if ( j<nums.length ){
-            
-                sum += nums[j];
-
-                if(sum >= k){
-                    count++;
-                    sum -= nums[i]; 
-                    i++;
-                } else {
-                    j++;
-                }
-            
-            } else {
-
-                sum -= nums[i];
-
-                if(sum >= k){
-                    count++;
-                    i++;
-                }
-            } 
-        }
-
         return count;
+
+       
     }
 }
