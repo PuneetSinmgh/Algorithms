@@ -1,6 +1,12 @@
 package src.my.com.hashtable.*;
 import java.util.*;
 
+// approach :
+// 1. For each word in words2, calculate the frequency of each character and store the maximum frequency for each character.
+// 2. For each word in words1, calculate the frequency of each character.
+// 3. Check if the frequency of each character in the word from words1 is greater than or equal to the maximum frequency of that character from words2.
+// 4. If it is, add the word from words1 to the result list.
+// 	    return n;
 
 class Solution {
     public List<String> wordSubsets(String[] words1, String[] words2) {
