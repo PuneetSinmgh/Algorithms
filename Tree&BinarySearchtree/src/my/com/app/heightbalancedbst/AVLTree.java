@@ -195,7 +195,10 @@ public class AVLTree {
         return root;
     }
 
-    public void delete(int key) {
+    public void dele
+    
+    
+    te(int key) {
         root = deleteNode(root, key);
     }
 
