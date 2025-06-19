@@ -1,4 +1,4 @@
-package my.com.app;
+package my.com.singlelinkedlist;
 
 public interface LinkedList {
 	
