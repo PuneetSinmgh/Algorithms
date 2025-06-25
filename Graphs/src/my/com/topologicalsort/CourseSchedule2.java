@@ -1,3 +1,16 @@
+package my.com.topologicalsort;
+
+import java.util.*;
+// course schedule II: 
+// approaches:  Implement Kahn's algorithm for topological sorting using BFS
+//  We create an adjacency list to represent the graph,
+//  and an array to keep track of the in-degrees of each node.
+//  We then initialize a queue with all nodes that have an in-degree of 0.
+//  We repeatedly remove nodes from the queue, add them to the result, and decrease the in-degrees of their neighbors.
+
+// time complexity: O(V + E) where V is the number of vertices (courses) and E is the number of edges (prerequisites).
+//  Space complexity: O(V + E) for the adjacency list and in-degree array.
+
 class Solution {
     public int[] findOrder(int numCourses, int[][] prerequisites) {
          
