@@ -2,6 +2,23 @@ package my.com.app._2d_dp;
 
 import java.util.*;
 
+
+// approach using memoization
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// where n is the length of the input array
+//// The idea is to check if the prefix of the array up to index i can be partitioned
+// into valid pairs or triplets. We use a recursive function with memoization to avoid redundant
+// calculations. The function checks three conditions:  
+// 1. If the last two elements are equal, it checks if the prefix up to i-2 is valid.
+// 2. If the last three elements are equal, it checks if the prefix up to i-3 is valid.
+// 3. If the last three elements form a consecutive sequence, it checks if the prefix up to i-3 is valid.
+// If any of these conditions hold true, the function returns true, indicating that the prefix can be partitioned
+// into valid pairs or triplets. If none of the conditions hold, it returns false.
+// The memoization map stores the results of previously computed indices to avoid redundant calculations, improving the efficiency of the solution.
+// The final result is obtained by checking if the prefix up to the last index can be partitioned into valid pairs or triplets.
+
+
 class Solution {
     Boolean[][] dp ;
     
