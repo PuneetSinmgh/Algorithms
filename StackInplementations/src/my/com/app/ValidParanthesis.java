@@ -9,6 +9,7 @@ import java.util.*;
 
 // Time Complexity: O(n) where n is the length of the string
 // Space Complexity: O(n) in the worst case, when all characters are opening parantheses
+
 class Solution {
     public boolean isValid(String s) {
      
