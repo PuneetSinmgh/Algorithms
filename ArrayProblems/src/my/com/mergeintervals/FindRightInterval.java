@@ -2,6 +2,20 @@ package src.my.com.mergeintervals;
 
 import java.util.*;
 
+// approach:
+// 1. create a hashmap to store the start of each interval and its index
+// 2. create an array to store the sorted start times of the intervals
+// 3. sort the start times
+// 4. iterate over the sorted start times
+// 5. for each start time, find the index of the interval that starts after the current interval's end time using binary search
+// 6. if the end time of the current interval is equal to the start time of the next interval, return the index of the current interval
+// 7. if no such interval exists, return -1 for that interval   
+
+// time complexity: O(n log n) for sorting and O(n log n) for binary search
+// space complexity: O(n) for the hashmap and the sorted array
+// overall time complexity: O(n log n)
+
+
 class Solution {
     public int[] findRightInterval(int[][] intervals) {
         

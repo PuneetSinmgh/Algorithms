@@ -1,6 +1,17 @@
 package my.com.app.dfs;
 
-// teo solution for Reconstruct Iternary problem
+// two solution for Reconstruct Iternary problem
+// approach 1 : using DFS and Priority Queue to store the edges
+// approach 2 : using DFS and Priority Queue to store the edges, but using HashMap
+// both approaches are similar in terms of logic, but the second approach is more efficient in terms of space complexity
+// and time complexity, as it avoids the overhead of creating a new list for each edge and instead uses a priority queue to store the edges directly.
+// The second approach also avoids the need to sort the edges, as the priority queue automatically sorts the edges in lexicographical order.
+
+// time complexity: O(n log n) for sorting the edges and O(n) for the DFS traversal
+// space complexity: O(n) for the priority queue and the hashmap
+// where n is the number of edges in the graph
+
+import java.util.*;
 
 class Solution {
     
