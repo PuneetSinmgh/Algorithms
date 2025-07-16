@@ -1,3 +1,6 @@
+package my.com.app.binarytree;
+
+import java.util.LinkedList;
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -17,7 +20,6 @@
  // approach 1 : using BFS
  // we can use a queue to traverse the tree level by level
  // and check if we encounter a null node before all nodes are processed at that level.
-package my.com.app.binarytree;
 
 import java.util.*;
  

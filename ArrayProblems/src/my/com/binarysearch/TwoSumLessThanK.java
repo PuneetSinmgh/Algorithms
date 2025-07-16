@@ -1,4 +1,4 @@
-package src.my.com.binarysearch;
+package my.com.binarysearch;
 
 import java.util.*;
 

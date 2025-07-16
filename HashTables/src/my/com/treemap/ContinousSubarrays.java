@@ -5,7 +5,24 @@ import java.util.*;
 // problem : Continuous Subarrays
 // Given an array of integers, count the number of continuous subarrays such that the absolute difference
 // between the maximum and minimum elements in the subarray is at most 2.
+/*
 
+You are given a 0-indexed integer array nums. A subarray of nums is called continuous if:
+Let i, i + 1, ..., j be the indices in the subarray. Then, for each pair of indices i <= i1, i2 <= j, 0 <= |nums[i1] - nums[i2]| <= 2.
+Return the total number of continuous subarrays.
+A subarray is a contiguous non-empty sequence of elements within an array.
+
+Input: nums = [5,4,2,4]
+Output: 8
+Explanation: 
+Continuous subarray of size 1: [5], [4], [2], [4].
+Continuous subarray of size 2: [5,4], [4,2], [2,4].
+Continuous subarray of size 3: [4,2,4].
+There are no subarrys of size 4.
+Total continuous subarrays = 4 + 3 + 1 = 8.
+It can be shown that there are no more continuous subarrays.
+
+*/
 
 // Approach: Use a sliding window with a TreeMap to maintain the frequency of elements.
 // The TreeMap will help us efficiently find the minimum and maximum elements in the current window.

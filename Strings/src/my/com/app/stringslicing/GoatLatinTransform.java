@@ -1,4 +1,4 @@
-package src.my.com.app.stringslicing;
+package my.com.app.stringslicing;
 import java.util.*;
 // Goat Latin Transform
 

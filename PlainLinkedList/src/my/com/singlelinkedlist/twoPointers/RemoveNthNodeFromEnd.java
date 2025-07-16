@@ -1,5 +1,5 @@
 package my.com.singlelinkedlist.twopointers;
-impoert java.util.*;
+import java.util.*;
 
 /**
  * Definition for singly-linked list.

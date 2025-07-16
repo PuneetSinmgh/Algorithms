@@ -1,4 +1,4 @@
-package src.my.com.dfs;
+package my.com.dfs;
 
 import java.util.*;
 // Accounts Merge

@@ -1,4 +1,4 @@
-package src.my.com.app.treebased;
+package my.com.app.treebased;
 
 import java.util.*;
 

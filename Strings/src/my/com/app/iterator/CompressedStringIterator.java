@@ -1,4 +1,4 @@
-pakage my.com.app.iterateor;
+package my.com.app.iterator;
 
 import java.util.*;
 // Compressed String Iterator

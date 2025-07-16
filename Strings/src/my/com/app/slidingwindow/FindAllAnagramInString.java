@@ -1,4 +1,4 @@
-package src.my.com.app.slidingwindow;
+package my.com.app.slidingwindow;
 
 import java.util.*;
 

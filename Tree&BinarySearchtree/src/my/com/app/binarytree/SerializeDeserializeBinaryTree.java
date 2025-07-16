@@ -1,4 +1,4 @@
-package src.my.com.app;
+package my.com.app.binarytree ;
 
 import java.util.*;
 
@@ -11,7 +11,7 @@ import java.util.*;
  *     TreeNode(int x) { val = x; }
  * }
  */
-public class Codec {
+public class SerializeDeserializeBinaryTree {
 
     
     // Encodes a tree to a single string.

@@ -1,4 +1,4 @@
-package src.my.com.app.grid_dp;
+package my.com.app.grid_dp;
 import java.util.*;
 // Longest Increasing Subsequence
 // Approach: Use dynamic programming to find the length of the longest increasing subsequence in an array.

@@ -1,4 +1,4 @@
-package src.my.com.app.grid_dp;
+package my.com.app.grid_dp;
 
 import java.util.*;
 // Unique Paths

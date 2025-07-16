@@ -1,6 +1,7 @@
-package src.my.com.app;
+package my.com.app;
 
 import java.util.*;
+
 // Approach: Iterate through the array from the end to the beginning.
 // If we find a pair of elements where the current element is not greater than the previous one, we have two options:
 // 1. Remove the current element and check if the rest of the array is strictly increasing.

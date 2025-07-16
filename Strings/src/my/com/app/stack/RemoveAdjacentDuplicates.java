@@ -1,9 +1,9 @@
-package src.my.com.app.stack;
+package my.com.app.stack;
 
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class Solution {
+public class RemoveAdjacentDuplicates {
     public String removeDuplicates(String s) {
         
         // Iterative approach with stack

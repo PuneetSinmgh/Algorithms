@@ -1,3 +1,7 @@
+package my.com.app;
+
+import java.util.*;
+
 class Solution {
     // each level is equal to prev layer plus the reverse of previous layer
     /*   0.         n=1

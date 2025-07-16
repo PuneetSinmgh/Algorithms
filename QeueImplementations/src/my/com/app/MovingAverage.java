@@ -1,6 +1,6 @@
-package src.my.com.app;
+package my.com.app;
 
-import java.util.*
+import java.util.*;
 
 /*class ListNode {
     ListNode next;

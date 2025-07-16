@@ -1,4 +1,4 @@
-package src.my.com.app;
+package my.com.app;
 
 import java.util.*;
 // approach : To keep all the elements in a list and maintain a hashmap to keep track of the indices of each element.

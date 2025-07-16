@@ -1,4 +1,4 @@
-package src.my.com.mergeintervals;
+package my.com.mergeintervals;
 
 import java.util.*;
 

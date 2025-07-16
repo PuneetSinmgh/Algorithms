@@ -2,7 +2,8 @@ package my.com.hashmap;
 
 import java.util.*;
 
-
+// Problem Decode String
+// Given a key and a message, decode the message using the key.
 
 public class DecodeString {
     public String decodeMessage(String key, String message) {

@@ -1,5 +1,6 @@
 package my.com.prefixsum;
 
+import java.util.HashMap;
 
 // continous sub Array sum divisible by k
 // calculate prefix sum and check if the difference of two prefix sums is divisible by k

@@ -1,4 +1,4 @@
-package src.my.com.app;
+package my.com.hashmap ;
 
 import java.util.*;
 

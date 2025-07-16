@@ -99,12 +99,12 @@ class TicTacToe {
 
 class OptimizedTicTacToe {
 
-    iint[] rows;
+    int[] rows;
     int[] cols;
     int diagonal;
     int antiDiagonal;
 
-    public TicTacToe(int n) {
+    public OptimizedTicTacToe(int n) {
         rows = new int[n];
         cols = new int[n];
     }

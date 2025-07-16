@@ -1,4 +1,4 @@
-package my.com.Matrix;
+package my.com.matrix;
 
 import java.util.* ;
 

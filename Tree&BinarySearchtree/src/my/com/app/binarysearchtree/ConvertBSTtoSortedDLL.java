@@ -45,6 +45,10 @@ class Solution {
             head.left = n;
         }
     }
+
+    // Convert a Binary Search Tree to a sorted Doubly Linked List
+    // Approach: Inorder traversal of the BST will give us the nodes in sorted order.
+    // We can maintain a doubly linked list while traversing the tree.
     public Node treeToDoublyList(Node root) {
         if(root== null)
             return null;

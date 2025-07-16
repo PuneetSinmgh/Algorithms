@@ -1,4 +1,4 @@
-package src.my.com.app.binarytree;
+package my.com.app.binarytree;
 
 import java.util.*;
 

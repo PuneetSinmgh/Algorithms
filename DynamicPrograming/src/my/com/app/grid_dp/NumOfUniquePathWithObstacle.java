@@ -1,4 +1,4 @@
-package src.my.com.app.grid_dp;
+package my.com.app.grid_dp;
 import java.util.*;
 // Unique Paths with Obstacles
 // Approach: Use dynamic programming to find the number of unique paths from the top-left corner to the bottom-right corner of a grid with obstacles.

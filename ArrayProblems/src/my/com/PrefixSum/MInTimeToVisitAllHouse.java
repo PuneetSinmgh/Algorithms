@@ -1,4 +1,4 @@
-package src.my.com.prefixsum;
+package my.com.prefixsum;
 
 import java.util.*;
 

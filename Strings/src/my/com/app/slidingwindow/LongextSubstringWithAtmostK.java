@@ -1,4 +1,4 @@
-package src.my.com.app.slidingwindow;
+package my.com.app.slidingwindow;
 // Approach: Use a sliding window with a HashMap to maintain the frequency of characters.
 // The HashMap will help us efficiently track the number of distinct characters in the current substring.
 // We will expand the right end of the window and contract the left end when the condition of having more than k distinct characters is violated.
