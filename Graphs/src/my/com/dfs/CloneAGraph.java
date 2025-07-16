@@ -1,6 +1,6 @@
-package my.com.app.dfs;
+package my.com.dfs;
+import java.util.*;
 
-/*
 // Definition for a Node.
 class Node {
     public int val;
@@ -18,7 +18,7 @@ class Node {
         neighbors = _neighbors;
     }
 }
-*/
+
 
 // Create a copy of node , already not created .
 // maintain a map of the nodes already created

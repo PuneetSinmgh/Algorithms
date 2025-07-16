@@ -1,9 +1,10 @@
-package src.my.com.hashmap;
+package my.com.hashmap;
 
 import java.util.*;
 
 
-class Solution {
+
+public class DecodeString {
     public String decodeMessage(String key, String message) {
         
         HashMap<Character, Character> hm = new HashMap();

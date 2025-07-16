@@ -1,4 +1,4 @@
-package src.my.com.dijkstra;
+package my.com.dijkstra;
 
 import java.util.*;
 

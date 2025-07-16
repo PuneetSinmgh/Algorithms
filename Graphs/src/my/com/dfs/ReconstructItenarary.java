@@ -1,4 +1,4 @@
-package my.com.app.dfs;
+package my.com.dfs;
 
 // two solution for Reconstruct Iternary problem
 // approach 1 : using DFS and Priority Queue to store the edges

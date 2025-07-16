@@ -1,4 +1,4 @@
-package src.my.com.hashtable.*;
+package my.com.hashtable;
 import java.util.*;
 
 // approach :

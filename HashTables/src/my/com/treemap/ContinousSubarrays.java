@@ -2,6 +2,11 @@ package my.com.treemap;
 
 import java.util.*;
 
+// problem : Continuous Subarrays
+// Given an array of integers, count the number of continuous subarrays such that the absolute difference
+// between the maximum and minimum elements in the subarray is at most 2.
+
+
 // Approach: Use a sliding window with a TreeMap to maintain the frequency of elements.
 // The TreeMap will help us efficiently find the minimum and maximum elements in the current window.
 // we can increase or decrease freq of max and min elements in the window.
