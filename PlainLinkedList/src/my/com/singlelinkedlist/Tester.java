@@ -1,4 +1,4 @@
-package my.com.app;
+package my.com.singlelinkedlist;
 
 import java.io.BufferedReader;
 import java.io.IOException;

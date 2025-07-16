@@ -1,4 +1,4 @@
-package src.my.com.hashmap;
+package my.com.hashmap;
 import java.util.*;
 
 // Logger class to implement rate limiting for log messages

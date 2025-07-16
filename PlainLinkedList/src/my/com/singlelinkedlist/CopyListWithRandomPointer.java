@@ -1,4 +1,4 @@
-pakage my.com.app;
+package my.com.singlelinkedlist;
 
 import java.util.*;
 
@@ -7,8 +7,9 @@ import java.util.*;
 // 1. Create a mapping of original nodes to their copies using a HashMap.
 // 2. Iterate through the original list and create a new node for each original node, storing the mapping in the HashMap.   
 // 3. Iterate through the original list again to set the next and random pointers for the copied nodes using the HashMap.
-/*
+
 // Definition for a Node.
+
 class Node {
     int val;
     Node next;
@@ -20,12 +21,11 @@ class Node {
         this.random = null;
     }
 }
-*/
 
-class Solution {
+
+public class CopyListWithRandomPointer {
+    
     public Node copyRandomList(Node head) {
-        
-
         // create Node to Node mapping and keep it in hashmap
         // first iteration create a new LL 
         // second Iteration populate the randome index

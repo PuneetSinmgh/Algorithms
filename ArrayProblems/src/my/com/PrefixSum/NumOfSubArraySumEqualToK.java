@@ -1,3 +1,11 @@
+package my.com.prefixsum;
+// Given an array of integers nums, return the number of subarrays that sum to k.
+// A subarray is a contiguous non-empty sequence of elements within an array.
+
+
+
+import java.util.*;
+
 class Solution {
     public int subarraySum(int[] nums, int k) {
  
@@ -49,7 +57,16 @@ class Solution {
             }
         } */
 
-        // optimized version
+        // optimized approach using HashMap:
+        // - maintain a hashmap to store the count of prefix sums
+        // - for each element, calculate the current prefix sum
+        // - check if the difference between the current prefix sum and k exists in the hashmap
+        // - if it exists, add the count of that prefix sum to the result
+        // - update the hashmap with the current prefix sum
+        
+        // Time Complexity: O(n)
+        // Space Complexity: O(n)
+
         HashMap<Integer, Integer> hs = new HashMap();
         int count =0 ;
 

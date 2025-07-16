@@ -1,4 +1,4 @@
-package my.com.app;
+package my.com.singlelinkedlist;
 
 import java.util.*;
 /**
@@ -10,7 +10,16 @@ import java.util.*;
  * }
  */
 
-class Solution {
+  class ListNode {
+    int val;
+    ListNode next;
+    ListNode(int x) {
+        val = x;
+        next = null;
+    }
+    
+ }
+public class MergeKSortedList {
     
     public ListNode mergeKLists(ListNode[] lists) {
      

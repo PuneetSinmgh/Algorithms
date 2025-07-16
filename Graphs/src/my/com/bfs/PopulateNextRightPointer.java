@@ -1,6 +1,7 @@
-package my.com.app.bfs;
+package my.com.bfs;
+import java.util.*;
 
-/*
+
 // Definition for a Node.
 class Node {
     public int val;
@@ -21,7 +22,7 @@ class Node {
         next = _next;
     }
 };
-*/
+
 
 class Solution {
     public Node connect(Node root) {

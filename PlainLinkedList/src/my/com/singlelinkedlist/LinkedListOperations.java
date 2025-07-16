@@ -1,6 +1,7 @@
-package my.com.app;
+package my.com.singlelinkedlist;
 
 import java.util.Hashtable;
+import my.com.singlelinkedlist.*;
 
 public class LinkedListOperations {
 

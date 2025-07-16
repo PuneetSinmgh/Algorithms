@@ -1,6 +1,6 @@
 package my.com.singlelinkedlist.twopointers;
 
-impoert java.util.*;
+import java.util.*;
 
 /**
  * Definition for singly-linked list.
@@ -13,7 +13,17 @@ impoert java.util.*;
  *     }
  * }
  */
-public class Solution {
+
+ class ListNode {
+    int val;
+    ListNode next;
+    ListNode(int x) {
+        val = x;
+        next = null;
+    }
+}
+
+public class InterSectionOfTwoLinkedList {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         
         ListNode c1 = headA;

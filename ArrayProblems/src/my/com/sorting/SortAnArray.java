@@ -1,4 +1,4 @@
-package src.my.com.sorting;
+package my.com.sorting;
 
 import java.util.*;
 

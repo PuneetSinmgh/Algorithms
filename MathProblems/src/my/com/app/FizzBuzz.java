@@ -1,6 +1,7 @@
 package my.com.app;
 
-import java.util.AbstractList;
+import java.util.*;
+
 class Solution {
     public List<String> fizzBuzz(int n) {
 

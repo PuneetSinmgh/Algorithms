@@ -12,12 +12,31 @@ import java.util.*;
 
 
 
-public class ZigzagIterator {
+public class ListZigZagIterator {
+
+    class Pair<K, V> {
+        private K key;
+        private V value;
+
+        public Pair(K key, V value) {
+            this.key = key;
+            this.value = value;
+        }
+
+        public K getKey() {
+            return key;
+        }
+
+        public V getValue() {
+            return value;
+        }
+    }
+    
 
     private List<List<Integer>> vectors = new ArrayList<>();
     private LinkedList<Pair<Integer, Integer>> queue = new LinkedList<>();
 
-    public ZigzagIterator(List<Integer> v1, List<Integer> v2) {
+    public ListZigZagIterator(List<Integer> v1, List<Integer> v2) {
         this.vectors.add(v1);
         this.vectors.add(v2);
         int index = 0;

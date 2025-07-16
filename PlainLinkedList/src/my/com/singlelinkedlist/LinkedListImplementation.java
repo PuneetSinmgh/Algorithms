@@ -1,4 +1,6 @@
-package my.com.app;
+package my.com.singlelinkedlist;
+
+import my.com.singlelinkedlist.*;
 
 public class LinkedListImplementation implements LinkedList {
 	
@@ -57,66 +59,7 @@ public class LinkedListImplementation implements LinkedList {
 		}
 	}
 
-	@Override
-	public void delete(int index) {
-		
-		
-		
-	}
-
-	@Override
-	public void insert(int index) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public int get(int index) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-
-	 public int get(int index) {
-        
-        Node temp = head;
-        int i =0 ;
-
-        while( temp !=null ){
-            if(i == index){
-                break;
-            }
-            temp = temp.next;
-            i++;
-        }
-        return temp == null? -1 : temp.val;
-        
-    }
-    
-    public void addAtHead(int val) {
-        Node n = new Node(val);
-        if(head == null){
-            head = n;
-            tail = n;
-        } else {
-            n.next = head;
-            head = n;
-        }
-        
-    }
-    
-    public void addAtTail(int val) {
-         Node n = new Node(val);
-        if( tail == null){
-            head = n;
-            tail = n;
-        } else {
-            tail.next = n;
-            tail = n;
-        }
-       
-    }
-    
+	
     public void addAtIndex(int index, int val) {
         
         if  (index == 0) {
@@ -177,5 +120,23 @@ public class LinkedListImplementation implements LinkedList {
             temp.next = t.next;
             t.next = null;
         }
+    }
+
+    @Override
+    public void delete(int index) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'delete'");
+    }
+
+    @Override
+    public void insert(int index) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'insert'");
+    }
+
+    @Override
+    public int get(int index) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'get'");
     }
 }

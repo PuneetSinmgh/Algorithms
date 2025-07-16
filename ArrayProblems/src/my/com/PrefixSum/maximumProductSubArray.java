@@ -1,9 +1,22 @@
-package src.my.com.prefixsum.*;
+package my.com.prefixsum;
 
 import java.util.*;
 
+// problem statement:
+// Given an integer arraay nums , find maximum product of a contiguous subarray.
+// A subarray is a contiguous part of an array.
 
-class Solution {
+// approach:
+// 1. Brute force: calculate product of all subarrays and return the maximum product
+// 2. Optimized approach: use two variables to keep track of maximum and minimum product
+//    - If the current number is negative, swap the maximum and minimum product
+//    - Update the maximum product as the maximum of the current number, maximum product multiplied by the current number, and minimum product multiplied by the current number
+//    - Update the minimum product as the minimum of the current number, maximum product multiplied by the current number, and minimum product multiplied by the current number
+//    - Return the maximum product at the end
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+public class maximumProductSubArray {
+
     public int maxProduct(int[] nums) {
         
         /* brute force

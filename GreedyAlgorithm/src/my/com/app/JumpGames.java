@@ -1,7 +1,10 @@
-package src.my.com.app;
+package my.com.app;
 
 import java.util.*;
-
+// jump game: approach : 
+// 1. Recursion
+// 2. Dynamic Programming
+// 3. Greedy : 
 class Solution {
 
     int[] dp;

@@ -1,4 +1,4 @@
-package src.my.com.app;
+package my.com.app.binarytree ;
 
 
 import java.util.*;
@@ -13,7 +13,8 @@ import java.util.*;
  *     TreeNode(int x) { val = x; }
  * }
  */
-class Solution {
+public class VerticalOrderTraversal {
+
     int c ;
     public List<List<Integer>> verticalOrder(TreeNode root) {
         if(root==null)
@@ -82,4 +83,24 @@ class Solution {
             
         }
     }
+
+    public class Pair<K, V> {
+        private K key;
+        private V value;
+
+        public Pair(K key, V value) {
+            this.key = key;
+            this.value = value;
+        }
+
+        public K getKey() {
+            return key;
+        }
+
+        public V getValue() {
+            return value;
+        }
+           
+    }
+
 }

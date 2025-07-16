@@ -1,4 +1,4 @@
-pakage my.com.app;
+package my.com.app;
 
 import java.util.*;
 // Minimum Operations to Make the Array Strictly Increasing

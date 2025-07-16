@@ -18,7 +18,15 @@ import java.util.*;
 // set the next of the second node to the first node
 // return the second node as result
 
-class Solution {
+class ListNode {
+    int val;
+    ListNode next;
+    ListNode() {}
+    ListNode(int val) { this.val = val; }
+    ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+}
+
+public class SwapNodeInPair {
     public ListNode swapPairs(ListNode head) {
         
         if (head == null)

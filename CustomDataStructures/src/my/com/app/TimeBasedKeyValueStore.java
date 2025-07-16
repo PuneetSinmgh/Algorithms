@@ -1,6 +1,7 @@
-package src.my.com.app;
+package my.com.app;
 import java.util.*;
 import javafx.util.Pair;
+
 // Time Based Key-Value Store
 // Approach: Use a HashMap to store the key-value pairs along with their timestamps.
 // For each key, maintain a list of pairs (timestamp, value). When setting a value, add it to the list.
@@ -46,6 +47,25 @@ class TimeMap {
 
         return l.get(e).getValue();
     }
+
+    class Pair<K, V> {
+        private K key;
+        private V value;
+
+        public Pair(K key, V value) {
+            this.key = key;
+            this.value = value;
+        }
+
+        public K getKey() {
+            return key;
+        }
+
+        public V getValue() {
+            return value;
+        }
+    }
+    
 }
 
 /**

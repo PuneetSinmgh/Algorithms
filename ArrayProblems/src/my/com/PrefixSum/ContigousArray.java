@@ -4,7 +4,11 @@ import java.util.HashMap;
 
 // Contiguous Array
 // Given a binary array nums, return the maximum length of a contiguous subarray with an equal number of 0 and 1.
+
 // Approach: Use prefix sum to convert 0s to -1s and then find the longest subarray with sum 0 using a hashmap.
+// If the sum is 0 at any index, it means that from the start to that index, the number of 0s and 1s are equal.
+// We store the first occurrence of each prefix sum in a hashmap. If we encounter the same prefix sum again, it means that the subarray between those two indices has a sum of 0.
+
 
 // Time Complexity: O(n)
 // Space Complexity: O(n)       

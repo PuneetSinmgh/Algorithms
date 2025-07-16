@@ -37,7 +37,7 @@ public class AVLTree {
         root = insertNode(root, key);
     }
 
-    public void insertNode(Node node, int key) {
+    public Node insertNode(Node node, int key) {
         if (node == null) {
             return new Node(key);
         }
@@ -195,10 +195,12 @@ public class AVLTree {
         return root;
     }
 
-    public void dele
-    
-    
-    te(int key) {
+    private Node minValueNode(Node right) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'minValueNode'");
+    }
+
+    public void delete(int key) {
         root = deleteNode(root, key);
     }
 

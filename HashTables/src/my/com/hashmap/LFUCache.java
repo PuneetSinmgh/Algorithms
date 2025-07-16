@@ -1,5 +1,5 @@
-package src.my.com.hashmap;
-import javafx.util.Pair;
+package my.com.hashmap;
+
 import java.util.*;
 // LFU Cache implementation
 // LFU Cache is a cache that evicts the least frequently used items first
@@ -11,6 +11,23 @@ import java.util.*;
 // When a key is added, if the cache is full, remove the least frequently used key
 // If the frequency set becomes empty, remove the frequency from the hashmap
 // Use a min frequency variable to keep track of the minimum frequency in the cache 
+class Pair<K, V> {
+    private K key;
+    private V value;
+
+    public Pair(K key, V value) {
+        this.key = key;
+        this.value = value;
+    }
+
+    public K getKey() {
+        return key;
+    }
+
+    public V getValue() {
+        return value;
+    }
+}
 
 class LFUCache {
 

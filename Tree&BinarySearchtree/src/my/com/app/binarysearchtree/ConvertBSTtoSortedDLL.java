@@ -1,7 +1,6 @@
 package my.com.app.binarysearchtree;
-import java.util.*;
 
-/*
+
 // Definition for a Node.
 class Node {
     public int val;
@@ -20,7 +19,7 @@ class Node {
         right = _right;
     }
 };
-*/
+
 
 class Solution {
     

@@ -1,4 +1,4 @@
-package src.my.com.singlelinkedlist.inplace;
+package my.com.singlelinkedlist.inplace;
 import java.util.*;
 
 /**
@@ -11,6 +11,17 @@ import java.util.*;
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
+
+ public class ListNode {
+ 
+    int val;
+    ListNode next;
+    ListNode() {}
+    ListNode(int val) { this.val = val; }
+    ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+    
+    
+ }
 class Solution {
     public ListNode partition(ListNode head, int x) {
         /*

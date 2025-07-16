@@ -11,7 +11,7 @@ import java.util.*;
  *     TreeNode(int x) { val = x; }
  * }
  */
-public class Codec {
+public class SerializeDeserializeBST {
 /** 
     // Encodes a tree to a single string in preorder traversal.
     public String serialize(TreeNode root) {

@@ -1,8 +1,7 @@
-package my.com.app
+package my.com.app;
 
 import java.util.HashMap;
 import java.util.*;
-import java.lang.*;
 
 
 public class ThreeSumProblemHashTable {

@@ -1,3 +1,15 @@
+package my.com.app;
+
+import java.util.*;
+// Interval Intersection
+// Given two lists of intervals, find the intersection of these two lists.
+// approach : 
+// - use two pointers to traverse both lists
+// - for each pair of intervals, check if they overlap
+// - if they do, add the intersection to the result list
+// - move the pointer of the interval that ends first
+// - continue until one of the lists is fully traversed
+
 class Solution {
     public int[][] intervalIntersection(int[][] firstList, int[][] secondList) {
 

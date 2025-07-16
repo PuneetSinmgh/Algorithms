@@ -1,4 +1,4 @@
-package src.my.com.treemap;
+package my.com.treemap;
 
 import java.util.*;
 

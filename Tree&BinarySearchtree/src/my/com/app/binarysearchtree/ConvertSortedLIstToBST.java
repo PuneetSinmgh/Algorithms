@@ -1,4 +1,4 @@
-package src.my.com.app.binarysearchtree;
+package my.com.app.binarysearchtree;
 
 import java.util.*;
 
@@ -27,7 +27,35 @@ import java.util.*;
  *     }
  * }
  */
-class Solution {
+
+ class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
+    TreeNode() {}
+    TreeNode(int val) { this.val = val; }
+    TreeNode(int val, TreeNode left, TreeNode right) {
+        this.val = val;
+        this.left = left;
+        this.right = right;
+    }
+ }
+
+ class ListNode {
+    int val;
+    ListNode next;
+    ListNode(int x) {
+        val = x;
+        next = null;
+    }
+    ListNode(int x, ListNode next) {
+        val = x;
+        this.next = next;
+    }   
+
+}
+
+public class ConvertSortedLIstToBST  {
     public TreeNode sortedListToBST(ListNode head) {
         
         if(head == null )
