@@ -1,7 +1,5 @@
 package my.com.app;
 
-import java.util.*;
-
 class Solution {
     public int maxProduct(int[] nums) {
         

@@ -26,7 +26,7 @@ class Solution {
             }
         }
 
-        List<Integer> res = new ArrayList();
+        List<Integer> res = new ArrayList<>();
         for (int i=0 ; i < matrix.length; i++ ) {
 
             for ( int j=0 ; j< matrix[0].length; j++){

@@ -16,7 +16,7 @@ class Solution {
         if (firstList.length == 0 ||  secondList.length == 0 )
             return new int[0][];
 
-        List<int[]> res = new ArrayList();
+        List<int[]> res = new ArrayList<int[]>();
         
         int i =0 , j=0;
         while( i<firstList.length && j<secondList.length ){

@@ -24,9 +24,9 @@ public class ThreeSumProblemHashTable {
 	    public List<List<Integer>> threeSum(int[] nums) {
 	     
 	        if(nums.length<3)
-	            return new ArrayList();
-	        List<List<Integer>> res = new ArrayList();
-	        Map<Integer,List<Integer>> ht = new HashMap();
+	            return new ArrayList<>();
+	        List<List<Integer>> res = new ArrayList<>();
+	        Map<Integer,List<Integer>> ht = new HashMap<>();
 	        
 	        List<Integer> l1,l2;
 	        for(int i=0;i<nums.length; i++){
@@ -36,7 +36,7 @@ public class ThreeSumProblemHashTable {
 	                l1.add(i);
 	                ht.put(nums[i], l1);
 	            }else{
-	                l1 = new ArrayList();
+	                l1 = new ArrayList<>();
 	                l1.add(i);
 	                ht.put(nums[i],l1);
 	            }
@@ -53,7 +53,7 @@ public class ThreeSumProblemHashTable {
 	                    l1 = ht.get(comp);
 	                    for(Integer k : l1){
 	                        if(i!=k && j!=k && i!=j){
-	                            l2 = new ArrayList();
+	                            l2 = new ArrayList<>();
 	                            l2.add(nums[i]);
 	                            l2.add(nums[j]);
 	                            l2.add(nums[k]);

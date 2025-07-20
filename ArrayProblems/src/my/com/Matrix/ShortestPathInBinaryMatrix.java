@@ -21,7 +21,7 @@ class Solution {
         // use a queue to store the next position of path by using formula : i*r+c
         // check for corner case for 8 directional cells and add to the path.
      
-        ArrayDeque<int[]> queue = new ArrayDeque();
+        ArrayDeque<int[]> queue = new ArrayDeque<int[]>();
         
         int[][] operations = { {-1,-1},{-1,0},{-1,+1},{0,-1},{0,1},{1,-1},{1,0},{1,1}};
         
