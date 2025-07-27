@@ -3,8 +3,7 @@ package my.com.hashmap;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.Map;
-import java.util.TreeMap;
+
 
 public class TwoSumDataStructure {
     
@@ -14,7 +13,7 @@ public class TwoSumDataStructure {
     public TwoSumDataStructure() {
 
         //hm  = new TreeMap<>();    
-        stream = new ArrayList();
+        stream = new ArrayList<>();
         isSorted = false;
     }
     
