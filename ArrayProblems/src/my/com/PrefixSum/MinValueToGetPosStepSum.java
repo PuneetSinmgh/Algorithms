@@ -1,6 +1,6 @@
 // Minimum value to get positive step sum
 package my.com.prefixsum;
-import java.util.*;
+
 // // Minimum value to get positive step sum
 // Given an array of integers nums, you start with an initial positive value startValue.
 // In each iteration, you calculate the step sum of nums, which is the sum of all elements in nums.

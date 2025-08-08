@@ -1,6 +1,6 @@
 package my.com.app;
 
-class Solution {
+class MaximumProductSubArray {
     public int maxProduct(int[] nums) {
         
         /* brute force

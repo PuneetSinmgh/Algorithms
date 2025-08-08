@@ -25,7 +25,7 @@ class Solution {
                 return 0;
         }
         
-        HashMap<Integer , Integer> hm = new HashMap();
+        HashMap<Integer , Integer> hm = new HashMap<>();
 
         int sum =0 , maxLen = 0 ;
         hm.put(0, -1);

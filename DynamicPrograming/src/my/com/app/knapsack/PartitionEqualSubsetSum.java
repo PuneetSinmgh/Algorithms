@@ -1,6 +1,11 @@
 package my.com.app.knapsack;
 import java.util.*;
 // Approach: Use dynamic programming to solve the subset sum problem.
+// problem staetement: Given an array of integers, can we partition it into two subsets such that the sum of both subsets is equal?
+
+// The problem can be reduced to checking if there exists a subset of the array that sums up to half of the total sum of the array.
+
+
 // We will create a 2D boolean array dp where dp[i][j] will be true if a subset of the first i elements can sum up to j.
 // We will iterate through the array and update the dp array based on whether we include or exclude the current element.
 

@@ -1,6 +1,5 @@
 package my.com.sorting;
 
-import java.util.*;
 
 class Solution {
     public int[] sortArray(int[] nums) {

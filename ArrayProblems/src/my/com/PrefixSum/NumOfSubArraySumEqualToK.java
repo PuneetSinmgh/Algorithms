@@ -6,7 +6,7 @@ package my.com.prefixsum;
 
 import java.util.*;
 
-class Solution {
+class NumOfSubArraySumEqualToK {
     public int subarraySum(int[] nums, int k) {
  
         if(nums.length == 0)

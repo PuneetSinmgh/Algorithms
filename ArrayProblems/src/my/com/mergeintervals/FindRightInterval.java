@@ -26,7 +26,7 @@ class Solution {
                 return new int[]{-1};
         }
 
-        HashMap<Integer, Integer> hm = new HashMap();
+        HashMap<Integer, Integer> hm = new HashMap<>();
 
         int[] result = new int[intervals.length];
 

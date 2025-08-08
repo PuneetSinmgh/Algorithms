@@ -1,6 +1,5 @@
 package my.com.prefixsum;
 
-import java.util.*;
 
 class Solution {
     public long minTotalTime(int[] forward, int[] backward, int[] queries) {
