@@ -11,6 +11,21 @@ class Order{
         this.price = p;
         this.qty = q;
     }
+
+    @Override
+    public String toString() {
+        return "Order{" +
+                "price=" + price +
+                ", qty=" + qty +
+                '}';    
+
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Order)) return false;
+        Order order = (Order) o;
+        return price == order.price && qty == order.qty;
+    }
+    
 }
 
 public class OrdersInBacklog {
